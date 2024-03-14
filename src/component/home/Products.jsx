@@ -18,7 +18,7 @@ export default function Products({ underTitle, title, products }) {
           {products.map((product, index) => (
             <section
               key={index}
-              className="rounded-2xl p-5 border-2 border-gray-200 shadow-2xl cursor-pointer"
+              className="rounded-2xl border-2 border-gray-200 shadow-2xl cursor-pointer p-5 hover:scale-105 duration-200"
               onClick={() => {
                 handleProductClick(product);
               }}
