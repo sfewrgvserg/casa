@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "id": 2,
+      "img": "../img/products/f2.jpg",
+      "price": 135.2,
+      "Quantity": 6,
+      "title": "Cartoon Astrronout T-Shirts"
+    },
+    {
+      "id": 2,
+      "img": "../img/products/f2.jpg",
+      "price": 135.2,
+      "Quantity": 6,
+      "title": "Cartoon Astrronout T-Shirts"
+    }
+  ]
+}

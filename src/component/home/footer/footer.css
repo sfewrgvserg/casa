@@ -1,0 +1,9 @@
+.imgPay{
+    @apply border-2 border-stone-600 border-solid cursor-pointer rounded-xl;
+}
+.textColorFooter{
+    @apply font-semibold text-black pb-6;
+}
+.textHeaderColorFooter{
+    @apply text-stone-600 space-y-1;
+}

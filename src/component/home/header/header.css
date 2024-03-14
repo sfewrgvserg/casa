@@ -1,0 +1,16 @@
+a{
+    @apply hover:text-navbar duration-200
+}
+
+.active::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #088178;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.active{
+    color: #088178;
+}
