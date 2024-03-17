@@ -3,7 +3,7 @@ import "./bannerButton.css";
 export default function BannerButton() {
   return (
     <>
-      <div className="w-[80%] mt-28 flex flex-col justify-between mx-auto text-white">
+      <div className="max-w-[80%] mt-28 flex flex-col justify-between mx-auto text-white">
         <div className="flex justify-center space-x-5">
           <div className="container group bg-banner17">
             <div className="containerText">

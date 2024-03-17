@@ -35,11 +35,11 @@ export default function Features() {
   return (
     <>
       <div>
-        <div className="flex justify-between w-[80%] mx-auto">
+        <div className="flex justify-between max-w-[80%] mx-auto max-xl:grid max-xl:grid-cols-3 max-sm:hidden">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center border-gray-200 border-2 font-semibold py-5 px-3 space-y-5 rounded-2xl shadow-2xl mx- my-20"
+              className=" text-center border-gray-200 border-2 font-semibold py-5 px-3 space-y-5 rounded-2xl shadow-2xl my-20 max-xl:flex max-xl:items-center max-xl:flex-col"
             >
               <img src={feature.img} alt="" />
               <p

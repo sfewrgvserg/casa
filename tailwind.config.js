@@ -28,6 +28,7 @@ export default {
         "banner1":"url('./img/banner/b1.jpg')",
         "banner19":"url('./img/banner/b19.jpg')",
         "banner6":"url('./img/about/a6.jpg')",
+        "banner2":"url('./img/banner/b2.jpg')",
         "banner_banner":"url('./img/about/banner.png')",
       },
     },

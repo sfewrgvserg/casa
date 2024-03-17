@@ -11,6 +11,20 @@ a{
     bottom: 0px;
     left: 0px;
 }
+
 .active{
     color: #088178;
+}
+@keyframes navbarOpen {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.navbar-animation-open {
+    animation: navbarOpen 0.2s ease-out 0s 1 normal none;
 }

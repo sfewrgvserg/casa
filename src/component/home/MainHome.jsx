@@ -4,8 +4,8 @@ export default function MainHome() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="bg-hero h-screen bg-cover">
-        <div className="flex flex-col justify-center h-screen w-[80%] mx-auto">
+      <div className="bg-hero bg-cover">
+        <div className="flex flex-col justify-center h-screen max-w-[80%] mx-auto">
           <div className="space-y-3">
             <p className="text-lg">Trade-in-offer</p>
             <div>
