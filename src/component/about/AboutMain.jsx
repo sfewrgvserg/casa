@@ -2,12 +2,12 @@ export default function AboutMain() {
   return (
     <>
       <div className="w-[80%] mx-auto">
-        <div className="grid grid-cols-2 items-center my-16">
+        <div className="grid grid-cols-2 items-center my-16 max-lg:flex max-lg:flex-col max-lg:items-start">
           <div>
             <img src="./img/about/a6.jpg" alt="" />
           </div>
           <div className="pl-10 space-y-5">
-            <h2 className="text-4xl font-extrabold">WHO WE ARE ?</h2>
+            <h2 className="text-2xl font-extrabold">WHO WE ARE ?</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non nisi
               ducimus harum ab! Consequuntur neque vitae numquam ipsam autem
@@ -21,17 +21,10 @@ export default function AboutMain() {
               consequuntur! Facere hic, voluptatem voluptate dolor cumque
               doloribus! Architecto quasi nobis est?
             </p>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi a
-              quod ipsum deleniti magni minus atque. Aliquid nostrum, saepe ab,
-              nam culpa cupiditate repellat et, exercitationem eum dolor dicta
-              ducimus? Atque debitis, nulla officia totam corrupti ab dolore
-              quasi eligendi rem placeat!
-            </p>
           </div>
         </div>
         <div className="flex flex-col items-center mt-36">
-          <h4 className="text-5xl font-bold text-stone-600">
+          <h4 className="text-2xl font-bold text-stone-600">
             Download Our
             <a
               href="https://play.google.com/store/games?device=windows"
@@ -45,7 +38,7 @@ export default function AboutMain() {
             <video
               controls
               src="./img/about/1.mp4"
-              className="rounded-[3rem] w-[60%] mx-auto my-14"
+              className="rounded-[3rem] w-[60%] mx-auto my-14 max-lg:w-full"
             ></video>
           </div>
         </div>

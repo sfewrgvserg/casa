@@ -2,8 +2,8 @@ function Message() {
   return (
     <>
       <div className="">
-        <div className="flex justify-between">
-          <div className="w-[60%]">
+        <div className="max-w-[80%] mx-auto flex justify-between max-xl:flex-col max-xl:items-center">
+          <div>
             <p className="text-sm text-stone-500">LEAVE A MESSAGE</p>
             <h4 className="my-7 text-4xl font-bold text-stone-700">
               We love to hear from you

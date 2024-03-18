@@ -6,7 +6,7 @@ export default function Banner() {
           <div className="space-y-7 min-h-[22rem] flex flex-col items-center justify-center ">
             <p>Repair Services</p>
             <div>
-              <div className="font-bold text-4xl flex max-md:flex-col max-md:items-center">
+              <div className="font-bold text-2xl flex max-md:flex-col max-md:items-center">
                 <div className="flex mb-5">
                   <p>Up to </p>
                   <span className="text-rose-600">70% Off -</span>

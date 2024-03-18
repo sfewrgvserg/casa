@@ -9,8 +9,8 @@ export default function MainHome() {
           <div className="space-y-3">
             <p className="text-lg">Trade-in-offer</p>
             <div>
-              <h3 className="text-5xl font-semibold">Super Value deals</h3>
-              <h4 className="text-5xl font-semibold text-navbar">
+              <h3 className="text-3xl font-semibold">Super Value deals</h3>
+              <h4 className="text-3xl font-semibold text-navbar">
                 On all products
               </h4>
             </div>

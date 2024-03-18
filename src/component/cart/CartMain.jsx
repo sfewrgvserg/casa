@@ -1,6 +1,5 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useState } from "react";
-import CartBanner from "./CartBanner";
 import { IoIosClose } from "react-icons/io";
 import user from "../../userProducts.json";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +23,6 @@ export default function CartMain() {
 
   return (
     <>
-      <CartBanner />
       <div className="w-[80%] mx-auto">
         {cartData.length <= 0 ? (
           <div className="flex flex-col items-center my-16 space-y-10">
@@ -43,36 +41,40 @@ export default function CartMain() {
         ) : (
           <div>
             <table className="text-center border-t-2 border-stone-300 my-16 w-full">
-              <tr className="border-b-2 border-stone-300">
-                <th className="py-5">REMOVE</th>
-                <th className="py-5">IMAGE</th>
-                <th className="py-5">PRODUCT</th>
-                <th className="py-5">PRICE</th>
-                <th className="py-5">QUANTITY</th>
-                <th className="py-5">SUBTOTAL</th>
-              </tr>
-              {cartData.map((user, index) => (
-                <tr key={index}>
-                  <td>
-                    <span
-                      className="border-2 rounded-full flex items-center justify-center cursor-pointer w-full hover:bg-navbar hover:text-white duration-300"
-                      onClick={() => handleRemoveItem(user.id)}
-                    >
-                      <IoIosClose size={35} />
-                    </span>
-                  </td>
-                  <td className="flex justify-center pt-7">
-                    <img src={user.img} className="size-40" alt="" />
-                  </td>
-                  <td>{user.title}</td>
-                  <td>$ {user.price}</td>
-                  <td>
-                    <span className="py-4 px-12 border-stone-300 border-2 shadow-xl">
-                      {user.Quantity}
-                    </span>
-                  </td>
-                  <td>$ {user.price}</td>
+              <thead>
+                <tr className="border-b-2 border-stone-300">
+                  <th className="py-5">REMOVE</th>
+                  <th className="py-5">IMAGE</th>
+                  <th className="py-5">PRODUCT</th>
+                  <th className="py-5">PRICE</th>
+                  <th className="py-5">QUANTITY</th>
+                  <th className="py-5">SUBTOTAL</th>
                 </tr>
+              </thead>
+              {cartData.map((user, index) => (
+                <tbody key={index}>
+                  <tr>
+                    <td>
+                      <span
+                        className="border-2 rounded-full flex items-center justify-center cursor-pointer w-full hover:bg-navbar hover:text-white duration-300"
+                        onClick={() => handleRemoveItem(user.id)}
+                      >
+                        <IoIosClose size={35} />
+                      </span>
+                    </td>
+                    <td className="flex justify-center pt-7">
+                      <img src={user.img} className="size-40" alt="" />
+                    </td>
+                    <td>{user.title}</td>
+                    <td>$ {user.price}</td>
+                    <td>
+                      <span className="py-4 px-12 border-stone-300 border-2 shadow-xl">
+                        {user.Quantity}
+                      </span>
+                    </td>
+                    <td>$ {user.price}</td>
+                  </tr>
+                </tbody>
               ))}
             </table>
             <div>

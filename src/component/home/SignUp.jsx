@@ -4,8 +4,8 @@ export default function SignUp() {
       <div className="my-16 bg-blue-950">
         <div className="max-w-[80%] h-[12rem] mx-auto py-7 text-white flex-col flex justify-center">
           <div className="">
-            <div className="flex items-center max-lg:flex-col">
-              <div>
+            <div className="flex items-center justify-between max-lg:flex-col">
+              <div className="space-y-2">
                 <p className="text-2xl font-semibold">
                   Sign Up For Newsletters
                 </p>

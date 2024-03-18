@@ -44,9 +44,9 @@ export default function Header() {
       </div>
 
       {isOpen && (
-        <nav className="relative flex justify-end max md:hidden">
+        <nav className="relative flex justify-end md:hidden">
           <ul
-            className={`fixed bg-red-800 top-[5.6rem] h-screen min-w-[80%] z-50 navbar ${
+            className={`fixed bg-gray-300 top-[5.5rem] h-screen min-w-[80%] z-50 navbar ${
               isOpen ? "navbar-animation-open" : ""
             }`}
           >
